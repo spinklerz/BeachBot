@@ -1,0 +1,39 @@
+body, html,div,head,link {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .opacity { animation: fadeIn 8s; }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  #background {
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Screenshot\ 2024-07-01\ at\ 5.22.29\ PM.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: top; /* Start from top */
+    animation-name: bounce-background;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes bounce-background {
+    from {
+      background-position: top;
+    }
+    to {
+      background-position: bottom;
+    }
+  }
